@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> TODO List </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="pages/newtodo.html" class="btn btn-primary">Add a TODO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--TODO List Table-->
+    <div class="container col-lg-10 col-xl-8 col-xxl-6 justify-content-center">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-start">TODO</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Completed</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="align-middle">
+
+                    <!--SAMPLE TODO #1-->
+                    <tr>
+                        <td class="text-start">Create a cookbook with favorite recipes</td>
+                        <td>29.10.2022</td>
+                        <td>10%</td>
+                        <td>
+                            <a class="btn btn-secondary" href="pages/edittodo.html"><i class="bi bi-pencil-square"></i></a>
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+    
+                    <!--SAMPLE TODO #2-->
+                    <tr class="align-middle">
+                        <td class="text-start">Contribute code to an open-source software project</td>
+                        <td>21.07.2022</td>
+                        <td>30%</td>
+                        <td>
+                            <a class="btn btn-secondary" href="pages/edittodo.html"><i class="bi bi-pencil-square"></i></a>
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" href=""><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+    
+                    <!--SAMPLE TODO #3-->
+                    <tr class="align-middle">
+                        <td class="text-start">Learn to write with nondominant hand</td>
+                        <td>02.06.2022</td>
+                        <td>50%</td>
+                        <td>
+                            <a class="btn btn-secondary" href="pages/edittodo.html"><i class="bi bi-pencil-square"></i></a>
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" href="#"><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+
+                    <!--SAMPLE TODO #4-->
+                    <tr class="align-middle">
+                        <td class="text-start">Make a JavaScript library</td>
+                        <td>16.08.2022</td>
+                        <td>0%</td>
+                        <td>
+                            <a class="btn btn-secondary" href="pages/edittodo.html"><i class="bi bi-pencil-square"></i></a>
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" href="#"><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+
+                </tbody>  
+            </table>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="mt-auto text-center pb-4">
+        <a class="link-dark" href="pages/imprint.html">Imprint</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
